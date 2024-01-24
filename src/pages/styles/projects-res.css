@@ -1,0 +1,35 @@
+@media screen and (min-width:750px){
+    .names{
+        display: block;
+        cursor: pointer;
+    }
+    .apps{
+        display: none;
+    }
+    .project-names{
+        display: grid;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        margin-right: 200px;
+        position: sticky;
+        z-index: 100;
+        top: 0;
+    }
+    .proj-main{
+        display: flex;
+        padding-left: 40px;
+    }
+    .assets{
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: auto;
+        gap: 40px;
+    }
+    .proj-photos{
+        width: 100%;
+        height: auto;
+    }
+}

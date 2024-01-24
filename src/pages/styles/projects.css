@@ -1,0 +1,28 @@
+@media screen and (max-width:750px){
+
+    
+    
+    .names{
+        display: none;
+    }
+    .proj-main{
+        display: grid;
+    }
+    .project-names{
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .apps{
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+    }
+    .proj-photos{
+        width: 100%;
+        height: auto;
+    }
+
+}

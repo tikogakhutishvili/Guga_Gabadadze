@@ -1,0 +1,45 @@
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+.contacts{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    align-items: center;
+    background-image: url(/public/about-imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+@media screen and (max-width:750px){
+    main{
+        width: 100%;
+    }
+    .contacts-list{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    li>img{
+        width: 25px;
+        height: auto;
+    }
+    .contacts-list > li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,27 @@
+@media screen and (min-width:750px){
+    .contacts > main {
+        margin-left: 40px;
+        height: 72vh;
+    }
+    li > img{
+        width: 50px;
+    }
+    .contacts-list{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+    .contacts-list > li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 35px;
+    }
+}

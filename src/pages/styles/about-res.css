@@ -1,0 +1,68 @@
+@media screen and (max-width:750px){
+    .grid{
+        display: grid;
+        align-items: center;
+    }
+    .main-box{
+        padding: 20px 0 50px;
+
+    }
+    h1{
+        font-size: 30px;
+        font-family: 'Black Ops One', system-ui;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin: 20px 0px 20px 0px;
+    }
+    .head-info{
+        display: grid;
+        gap: 10px;
+        width: 100%;
+    }
+    .icon{
+        width: auto;
+        height: 40px;
+        margin-left: 0;
+    }
+    main{
+        display: grid;
+        gap: 40px;
+    }
+    .second-box{
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
+        margin: 10px 10px 30px 15px;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .university {
+        font-family: 'Black Ops One', system-ui;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 10px 0px 10px ;
+    }
+    .info{
+        display: grid;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}
