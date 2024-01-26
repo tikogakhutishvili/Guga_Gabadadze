@@ -15,6 +15,7 @@ ul{
 @media screen and (max-width:750px){
     main{
         width: 100%;
+        
     }
     .contacts-list{
         width: 100%;

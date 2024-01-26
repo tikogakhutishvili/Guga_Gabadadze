@@ -14,22 +14,35 @@
         margin-right: 200px;
         position: sticky;
         z-index: 100;
-        top: 0;
+        top: 18vh;
+        height: 50vh;
     }
     .proj-main{
         display: flex;
         padding-left: 40px;
     }
     .assets{
-        width: 70%;
+        width: 50%;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: auto;
         gap: 40px;
     }
-    .proj-photos{
-        width: 100%;
+    img.proj-photos{
+        width: 70%;
         height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    h1{
+        position: sticky;
+        z-index: 100;
+        top: 8vh;
     }
 }
