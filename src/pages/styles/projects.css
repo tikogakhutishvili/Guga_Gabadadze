@@ -1,12 +1,12 @@
 @media screen and (max-width:750px){
 
     
-    
     .names{
         display: none;
     }
     .proj-main{
         display: grid;
+        width: 100%;
     }
     .project-names{
         display: flex;
@@ -23,6 +23,11 @@
     .proj-photos{
         width: 100%;
         height: auto;
+    }
+    iframe.proj-videos{
+        width: 100%;
+        height: 50vh;
+
     }
 
 }

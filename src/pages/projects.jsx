@@ -10,9 +10,16 @@ const Projects = () => {
     };
 
     const projectPhotos = {
-        Aftereffect: [
+        Aftereffect: [],
+        Blender: [
+            "https://lh3.googleusercontent.com/d/1fXucrvQ9EnwKX9w8x6IIQ4Ark7KmA59w",
+            "https://lh3.googleusercontent.com/d/1DPywWqYuAWnjS8HruAQr1RYwdm7owxv5",
+            "https://lh3.googleusercontent.com/d/1OYaZIu6tWFVn7SaJLGkUo5tRQnBUXgmy",
+            "https://lh3.googleusercontent.com/d/1icFYaLTDUwocY71ZLYgEKBr6YNHUGzor",
+            "https://lh3.googleusercontent.com/d/1g-EbB2M8frCgrunRGTxjmP1kU0_nuYaB",
+            "https://lh3.googleusercontent.com/d/1qZN4dCEVa_msGDTysdNczMHl5pd6XziZ"
+
         ],
-        Blender: [],
         Illustrator: [
             "https://lh3.googleusercontent.com/d/1qIFHshNpI0ADo7xJxl2YI3HV5QNNWLhx",
             "https://lh3.googleusercontent.com/d/1_OEkQ1dqkA2CIBRWK_pGT4n-FlZyZkAs",
@@ -24,16 +31,45 @@ const Projects = () => {
             "https://lh3.googleusercontent.com/d/1sKl73wiknxrP71NxOUzkb7keLFPw_zRG",
             "https://lh3.googleusercontent.com/d/1Ok2or5uTNeHX-lBRoVX9XBAwohEokBWI",
             "https://lh3.googleusercontent.com/d/1llFYHKQPvRTSfT7IRscKp6A4fkLIPh98",
+            "https://lh3.googleusercontent.com/d/1lVYsd-_dRrC4p3DXdohdWTxQvnr5Dv0w",
+            "https://lh3.googleusercontent.com/d/1nPIpYUYhayTQitorUjpkCd4gwXGVG3S4",
+            "https://lh3.googleusercontent.com/d/1dk-hDmDpxVaSzUeO2-GEJfpr7aEuncvu",
+            "https://lh3.googleusercontent.com/d/1v6h7Xi8QvSzgcPKlsZwgGeadsDdL5wV9",
+            "https://lh3.googleusercontent.com/d/1bnGGIAaKV4E9BR6rTYF922UO-jzP885Z",
+            "https://lh3.googleusercontent.com/d/1ty0KiwvK6mf2n0iWZD7tFLKatk-B2Apn"
 
         ],
-        AdobePhotoshop: [],
+        AdobePhotoshop: [
+            "https://lh3.googleusercontent.com/d/1T1jMpHfdrJfHtPcdcmg_iv07GxRtjzTJ",
+            "https://lh3.googleusercontent.com/d/1vE8GYnEqrYxEpcrBUUY8-t080lJOw0Xe",
+            "https://lh3.googleusercontent.com/d/1yDyifl1Ib_BbfHw7hwZHiXRBFYCRPUkY",
+            "https://lh3.googleusercontent.com/d/1H0KFaUJ3XKVC7eO_rWaC0SKpUflil0wP",
+            "https://lh3.googleusercontent.com/d/1A4JJigoBhJAGJaoAaJuH8pA_hMqyxeLU",
+            "https://lh3.googleusercontent.com/d/1qmAytRqd0ITBf635azHApx3H87f06WMe",
+            "https://lh3.googleusercontent.com/d/1KYwEWKG5Jpah32c22q6mHy02MwQ5U2EL",
+            "https://lh3.googleusercontent.com/d/1yC8yvA2cJHZx3uaOqn2HBmXBUcLny6Mw"
+        ],
     };
 
     const projectVideos = {
         Aftereffect: [
-            "",
+            
+            "https://drive.google.com/file/d/19g5n9TC1ru9KXYrGz1UeJRGgh7NOv8Ky/preview",
+            "https://drive.google.com/file/d/1wH_30jdRMuPnRyJLr1bwT-ipgZoRXX26/preview",
+            "https://drive.google.com/file/d/1q7UUBKOg547M-aHTj6RoyP7gUTw81iGn/preview",
+            "https://drive.google.com/file/d/1khomvRE_4lLLOe1hvl_xgC2akB67TkyQ/preview"
         ],
-        Blender: [],
+        Blender: [
+            "https://drive.google.com/file/d/11BclUI56Bx0-8ZlhEJ__b1ZivCig6DRb/preview",
+            "https://drive.google.com/file/d/1km-qOePfYIab_2hCLSgoiuwgebk8PGjq/preview",
+            "https://drive.google.com/file/d/1Z8CMERqiaGDTkwy-awIV-O_x3Qkqv06D/preview",
+            "https://drive.google.com/file/d/1PLJAFTNAG60btONXOfMNOlWApdjpdpD6/preview",
+            "https://drive.google.com/file/d/1DPywWqYuAWnjS8HruAQr1RYwdm7owxv5/preview",
+            "https://drive.google.com/file/d/1ZWeMxlKalC1KfX3GH-5uzf--5y7mWlds/preview",
+            "https://drive.google.com/file/d/1gBZ0SaoDDIMVjXxOaJPxCGVaWCiQjqg6/preview",
+            "https://drive.google.com/file/d/12H910jNjVAZ9Xfn90sq20O86oi8iRpPQ/preview"
+
+        ],
         Illustrator: [],
         AdobePhotoshop: [],
     };
@@ -42,19 +78,27 @@ const Projects = () => {
         <>
             {projectPhotos[selectedProject] && projectPhotos[selectedProject].map((photoUrl, index) => (
                 <img
-                    key={index}
-                    className='proj-photos'
-                    src={photoUrl}
-                    alt={`Project ${selectedProject} - Photo ${index + 1}`}
+                key={index}
+                className='proj-photos'
+                src={photoUrl}
+                alt={`Project ${selectedProject} - Photo ${index + 1}`}
                 />
-            ))}
-            {projectVideos[selectedProject] && projectVideos[selectedProject].map((videoUrl, index) => (
-                <video key={index} className='proj-videos' controls>
-                    <source src={videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            ))}
-        </>
+                ))}
+           {projectVideos[selectedProject] && projectVideos[selectedProject].map((videoUrl, index) => (
+               <iframe
+               allowFullScreen
+               className='proj-videos'
+               key={index}
+               src={videoUrl}
+               controls
+               type='mp4'
+               title={`Project ${selectedProject} - Video ${index + 1}`}
+                />           
+               
+               
+               ))}
+
+               </>
     ) : null;
 
     return (
