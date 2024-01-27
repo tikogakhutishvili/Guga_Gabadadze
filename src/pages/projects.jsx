@@ -6,6 +6,10 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
     const projectClickHandler = (projectName) => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', 
+        });
         setSelectedProject(projectName);
     };
 
