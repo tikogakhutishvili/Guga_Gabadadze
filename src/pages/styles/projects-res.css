@@ -1,7 +1,12 @@
 @media screen and (min-width:750px){
-    .names{
+    h5.names{
         display: block;
         cursor: pointer;
+        font-size:32px ;
+    }
+    .bigger-font{
+        text-decoration: underline;
+        color: darkblue;
     }
     .apps{
         display: none;
@@ -47,6 +52,5 @@
     iframe.proj-videos{
         width: 70%;
         height: 70vh;
-
     }
 }

@@ -4,13 +4,19 @@ import './styles/projects-res.css';
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [isFontBigger, setIsFontBigger] = useState(false);
 
     const projectClickHandler = (projectName) => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth', 
         });
+        if (selectedProject && isFontBigger) {
+            setIsFontBigger(false);
+        }
+
         setSelectedProject(projectName);
+        setIsFontBigger(true);
     };
 
     const projectPhotos = {
@@ -111,20 +117,20 @@ const Projects = () => {
             <main className="proj-main">
                 <div className="project-names">
                     <div className="boxes" onClick={() => projectClickHandler('Aftereffect')}>
-                        <img className="apps" src="./icons/aftereffect.png" alt="" />
-                        <h3 className="names">Aftereffect</h3>
+                        <img className={`apps ${selectedProject === 'Aftereffect' && isFontBigger ? 'bigger-logo' : ''}`} src="./icons/aftereffect.png" alt="" />
+                        <h5 className={`names ${selectedProject === 'Aftereffect' && isFontBigger ? 'bigger-font' : ''}`}>Aftereffect</h5>
                     </div>
                     <div className="boxes" onClick={() => projectClickHandler('Blender')}>
-                        <img className="apps" src="./icons/blender.png" alt="" />
-                        <h3 className="names">Blender</h3>
+                        <img className={`apps ${selectedProject === 'Blender' && isFontBigger ? 'bigger-logo' : ''}`} src="./icons/blender.png" alt="" />
+                        <h5 className={`names ${selectedProject === 'Blender' && isFontBigger ? 'bigger-font' : ''}`}>Blender</h5>
                     </div>
                     <div className="boxes" onClick={() => projectClickHandler('Illustrator')}>
-                        <img className="apps" src="./icons/illustrator.png" alt="" />
-                        <h3 className="names">Illustrator</h3>
+                        <img className={`apps ${selectedProject === 'Illustrator' && isFontBigger ? 'bigger-logo' : ''}`} src="./icons/illustrator.png" alt="" />
+                        <h5 className={`names ${selectedProject === 'Illustrator' && isFontBigger ? 'bigger-font' : ''}`}>Illustrator</h5>
                     </div>
                     <div className="boxes" onClick={() => projectClickHandler('AdobePhotoshop')}>
-                        <img className="apps" src="./icons/photoshop.png" alt="" />
-                        <h3 className="names">Adobe Photoshop</h3>
+                        <img className={`apps ${selectedProject === 'AdobePhotoshop' && isFontBigger ? 'bigger-logo' : ''}`} src="./icons/photoshop.png" alt="" />
+                        <h5 className={`names ${selectedProject === 'AdobePhotoshop' && isFontBigger ? 'bigger-font' : ''}`}>Adobe Photoshop</h5>
                     </div>
                 </div>
                 <div className="assets">
