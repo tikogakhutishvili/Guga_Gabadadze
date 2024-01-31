@@ -46,7 +46,7 @@ const Home = () => {
   };
 
   return (
-    <div className='main'>
+    <div className='main-div'>
       <Popup />
     </div>
   );
