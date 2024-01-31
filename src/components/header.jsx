@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="/home" className='name'>
+        <Link to="" className='name'>
           Guga Gabadadze
         </Link>
         <img
