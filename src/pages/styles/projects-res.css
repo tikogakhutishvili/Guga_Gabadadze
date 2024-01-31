@@ -4,8 +4,10 @@
         cursor: pointer;
         font-size:32px ;
     }
+    h1{
+        padding-top: 20px;
+    }
     .bigger-font{
-        text-decoration: underline;
         color: darkblue;
     }
     .apps{
@@ -19,7 +21,7 @@
         position: sticky;
         z-index: 100;
         top: 18vh;
-        height: 50vh;
+        height: 49vh;
     }
     .proj-main{
         display: flex;
@@ -27,7 +29,15 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 15vh;
+    }
+    .main{
+        width: 100%;
+        height: auto;
+        background-image: url(/public/about-imgs/background.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding-bottom: 15vh;
     }
     .assets{
         width: 70%;
@@ -43,11 +53,6 @@
     img.proj-photos{
         width: 70%;
         height: auto;
-    }
-    h1{
-        position: sticky;
-        z-index: 100;
-        top: 8vh;
     }
     iframe.proj-videos{
         width: 70%;

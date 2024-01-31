@@ -112,7 +112,7 @@ const Projects = () => {
     ) : null;
 
     return (
-        <div>
+        <div className='main'>
             <h1>Projects</h1>
             <main className="proj-main">
                 <div className="project-names">

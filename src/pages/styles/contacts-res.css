@@ -1,15 +1,18 @@
 @media screen and (min-width:750px){
     .contacts > main {
         margin-left: 40px;
-        height: 72vh;
+        height: 67vh;
     }
     li > img{
-        width: 50px;
+        width: 45px;
+    }
+    h1{
+        padding-top: 15px;
     }
     .contacts-list{
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 28px;
         height: auto;
     }
     .contacts-list > li{
@@ -22,6 +25,6 @@
     a {
         text-decoration: none;
         color: black;
-        font-size: 35px;
+        font-size: 33px;
     }
 }
